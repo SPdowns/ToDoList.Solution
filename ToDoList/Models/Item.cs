@@ -1,10 +1,7 @@
-namespace Calendar
+namespace ToDoList.Models
 {
-  public class LeapYear
+  public class Item
   {
-    public bool IsLeapYear(int year)
-    {
-      return year % 4 == 0;
-    }
+  
   }
 }
