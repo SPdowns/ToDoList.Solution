@@ -9,7 +9,7 @@ namespace ToDoList
     public static void Main()
     {
       Console.WriteLine("Welcome to the to do list!");
-      Console.WriteLine("Would you like to add an item or view your list? type (Add or View");
+      Console.WriteLine("Would you like to add an item or view your list? type (Add or View)");
       string userInput = Console.ReadLine();
       
       List<Item> newList = new List<Item>{};
@@ -26,6 +26,8 @@ namespace ToDoList
       {
         List<Item> result = Item.GetAll();
         foreach (Item thisItem in result)
+        counter = 0
+        ++
         Console.WriteLine("Output: " + thisItem.Description);
         Main();
       }
