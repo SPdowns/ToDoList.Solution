@@ -19,7 +19,7 @@ namespace ToDoList
         string itemDescription = Console.ReadLine();
         Item newDescription = new Item(itemDescription);
         string newItem = newDescription.Description;
-        Console.WriteLine(newItem + "has been added to your list. Would you like to add an item to your list or view your list? (Add/View)");
+        Console.WriteLine(newItem + " has been added to your list.");
         Main();
       }
       else if (userInput == "View")
@@ -27,6 +27,7 @@ namespace ToDoList
         List<Item> result = Item.GetAll();
         foreach (Item thisItem in result)
         Console.WriteLine("Output: " + thisItem.Description);
+        Main();
       }
       else
       {
