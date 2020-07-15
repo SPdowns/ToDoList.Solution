@@ -19,6 +19,9 @@ namespace ToDoList
         string itemDescription = Console.ReadLine();
         Item newDescription = new Item(itemDescription);
         string newItem = newDescription.Description;
+        foreach (string item in newItem) {
+          item ++;
+        }
         Console.WriteLine(newItem + " has been added to your list.");
         Main();
       }
@@ -26,9 +29,7 @@ namespace ToDoList
       {
         List<Item> result = Item.GetAll();
         foreach (Item thisItem in result)
-        counter = 0
-        ++
-        Console.WriteLine("Output: " + thisItem.Description);
+        Console.WriteLine(thisItem.Description);
         Main();
       }
       else
